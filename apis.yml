@@ -1,8 +1,26 @@
 aid: beek
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/beek.png
 name: Beek
-description: 'Beek is a company surfaced as a portfolio company of accel, lightspeed-venture-partners
-  and added to the API Evangelist network as a stub for enrichment. Sector: intelligent-apps. This profile
-  is a lead awaiting the enrichment pipeline.'
+description: 'Beek was a Spanish-language audiobook and ebook streaming platform serving
+  Latin America and Spain, backed by Accel and Lightspeed Venture Partners. At its
+  peak it reached over 4 million users who streamed nearly 200 million minutes of audio
+  content, including its exclusive Beek Originals catalog. The service has since shut
+  down: Amazon''s Audible acquired a significant portion of the Beek Originals catalog,
+  and Beek now redirects listeners to Audible to continue their libraries. Beek ran
+  a private backend service (api.beek.io) but published no public developer program,
+  OpenAPI specification, SDKs, or developer documentation, so it has no consumable
+  API surface to enrich.'
 url: https://raw.githubusercontent.com/api-evangelist/beek/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +29,21 @@ x-backed-by:
 - lightspeed-venture-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
+x-status-note: Shut down; Beek Originals catalog partially acquired by Amazon Audible.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Intelligent Apps
+- Audiobooks
+- Media
+- Streaming
+- Consumer
+- Entertainment
+- Spanish Language
+- Latin America
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +51,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/beek-domain-security.yml
 - type: Website
   url: https://beek.io/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
